@@ -1,0 +1,841 @@
+/* ============================================================
+   DERMIIZ — SERVICE DETAIL PAGE STYLESHEET
+   Matching attached Dermiiz UI Design Reference (media_1788602936721.png)
+   and Dermix animation/interaction specifications
+   ============================================================ */
+
+/* --- Page Background Wrapper --- */
+.service-detail-body {
+    background-color: var(--dermiiz-ivory, #F8F2EB);
+    color: var(--dermiiz-brown, #302522);
+    font-family: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ============================================================
+   HERO SECTION (Matching Dermiiz Announcement + Dark Hero)
+   ============================================================ */
+.service-hero-outer {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 0;
+}
+
+/* Top Announcement Bar */
+.service-top-bar {
+    background-color: #D2E054;
+    border-radius: 20px 20px 0 0;
+    padding: 0.625rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.service-top-bar a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.service-top-bar a:hover {
+    opacity: 0.75;
+}
+
+.service-top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.service-top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-top-bar-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Dark Hero Banner with Background Image */
+.service-hero-dermiiz {
+    position: relative;
+    background-color: #241B19;
+    background-image: linear-gradient(to right, rgba(28, 20, 18, 0.88) 0%, rgba(28, 20, 18, 0.52) 48%, rgba(28, 20, 18, 0.15) 100%),
+        url('../assets/images/about_hero_banner.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    color: #FFFFFF;
+    min-height: 590px;
+    border-radius: 0 0 28px 28px;
+    padding: 10rem 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+/* Subdued background decorative ambient glow */
+.service-hero-dermiiz::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(248, 227, 203, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Hero Content Area */
+.service-hero-content {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 1rem;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+
+.service-hero-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.service-hero-breadcrumb a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.service-hero-breadcrumb a:hover {
+    color: #F8E3CB;
+}
+
+.service-hero-breadcrumb span.separator {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.service-hero-breadcrumb span.current {
+    color: #F8E3CB;
+    font-weight: 500;
+}
+
+/* ============================================================
+   MAIN TWO-COLUMN LAYOUT
+   ============================================================ */
+.service-layout-section {
+    background-color: #F8F2EB;
+    padding: 5rem 1rem 6rem;
+}
+
+.service-layout-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+/* ============================================================
+   STICKY SIDEBAR (Left Column)
+   ============================================================ */
+.service-sidebar {
+    position: sticky;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Sidebar Widget 1: Explore Our Services */
+.sidebar-explore-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(48, 37, 34, 0.05);
+}
+
+.sidebar-explore-header {
+    background-color: #2F2421;
+    color: #FFFFFF;
+    padding: 1.35rem 1.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.sidebar-explore-list {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-service-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1.75rem;
+    color: #302522;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(48, 37, 34, 0.07);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidebar-service-link:last-child {
+    border-bottom: none;
+}
+
+.sidebar-service-link .arrow-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+    color: #7A6F6B;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.sidebar-service-link:hover {
+    background-color: #FBF7F2;
+    color: #1a1210;
+    padding-left: 2rem;
+}
+
+.sidebar-service-link:hover .arrow-icon {
+    color: #302522;
+    transform: translate(3px, -3px);
+}
+
+.sidebar-service-link.active {
+    background-color: #F8F2EB;
+    font-weight: 600;
+    color: #241B19;
+}
+
+.sidebar-service-link.active .arrow-icon {
+    color: #241B19;
+}
+
+/* Sidebar Widget 2: Contact Us Today! Card */
+.sidebar-contact-card {
+    background-color: #241B19;
+    border-radius: 18px;
+    padding: 2.25rem 2rem 5.5rem;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(36, 27, 25, 0.15);
+}
+
+.sidebar-contact-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    color: #FFFFFF;
+    letter-spacing: -0.01em;
+}
+
+.sidebar-contact-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0 0 1.75rem;
+    max-width: 240px;
+}
+
+.sidebar-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid #F8E3CB;
+    transition: all 0.25s ease;
+}
+
+.sidebar-contact-btn:hover {
+    color: #F8E3CB;
+    border-bottom-color: transparent;
+    transform: translateX(4px);
+}
+
+.sidebar-contact-avatar {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #241B19;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    transition: transform 0.4s ease;
+}
+
+.sidebar-contact-card:hover .sidebar-contact-avatar {
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   MAIN CONTENT AREA (Right Column)
+   ============================================================ */
+.service-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* Top Hero Image */
+.service-top-image-wrap {
+    width: 100%;
+    height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(48, 37, 34, 0.08);
+}
+
+.service-top-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-top-image-wrap:hover .service-top-image {
+    transform: scale(1.03);
+}
+
+/* Intro Paragraphs */
+.service-intro-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.service-intro-block p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #4A3E3B;
+    margin: 0;
+}
+
+.service-intro-block p strong {
+    color: #241B19;
+    font-weight: 600;
+}
+
+/* Section Headings */
+.service-block-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #241B19;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+}
+
+.service-block-subtext {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #6E615D;
+    margin: 0 0 2rem;
+    max-width: 780px;
+}
+
+/* ============================================================
+   TYPES WE TREAT SECTION (2x2 Dark Cards)
+   ============================================================ */
+.service-types-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-types-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.service-type-card {
+    background-color: #241B19;
+    border-radius: 18px;
+    padding: 2.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #FFFFFF;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(36, 27, 25, 0.18);
+}
+
+.service-type-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at top right, rgba(248, 227, 203, 0.1), transparent 70%);
+    pointer-events: none;
+}
+
+.service-type-icon {
+    width: 44px;
+    height: 44px;
+    color: #F8E3CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+}
+
+.service-type-icon svg {
+    width: 36px;
+    height: 36px;
+    stroke: #F8E3CB;
+    stroke-width: 1.6;
+    fill: none;
+}
+
+.service-type-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.service-type-desc {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+}
+
+/* ============================================================
+   BENEFITS SECTION (Doctor Image + White Card + Checkmarks)
+   ============================================================ */
+.service-benefits-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-benefits-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 2.25rem;
+    align-items: stretch;
+}
+
+.service-benefits-image-wrap {
+    border-radius: 18px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 360px;
+    box-shadow: 0 8px 24px rgba(48, 37, 34, 0.08);
+}
+
+.service-benefits-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.service-benefits-image-wrap:hover .service-benefits-image {
+    transform: scale(1.03);
+}
+
+.service-benefits-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* White Highlight Card */
+.benefits-highlight-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    box-shadow: 0 6px 20px rgba(48, 37, 34, 0.04);
+    border: 1px solid rgba(48, 37, 34, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.benefits-highlight-card:hover {
+    transform: translateY(-3px);
+}
+
+.benefits-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #241B19;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefits-card-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: #F8E3CB;
+    fill: none;
+    stroke-width: 1.7;
+}
+
+.benefits-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.benefits-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #241B19;
+    margin: 0;
+}
+
+.benefits-card-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #6E615D;
+    margin: 0;
+}
+
+/* Bullet Checklist Items */
+.benefits-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.benefits-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.check-icon-circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #241B19;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.check-icon-circle svg {
+    width: 12px;
+    height: 12px;
+    stroke: #FFFFFF;
+    stroke-width: 2.5;
+    fill: none;
+}
+
+.check-item-text {
+    font-size: 0.96rem;
+    line-height: 1.55;
+    color: #4A3E3B;
+    margin: 0;
+}
+
+/* ============================================================
+   FAQ ACCORDION SECTION (Pill-shaped accordions)
+   ============================================================ */
+.service-faq-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-card-item {
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Trigger Button */
+.faq-trigger {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #241B19;
+    border: 1px solid rgba(48, 37, 34, 0.08);
+    border-radius: 14px;
+    padding: 1.35rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: left;
+    transition: all 0.25s ease;
+}
+
+.faq-trigger:hover {
+    background-color: #FCF9F5;
+    border-color: rgba(48, 37, 34, 0.15);
+}
+
+.faq-toggle-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #241B19;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Open / Active State (Dark Brown Header matching UI image) */
+.faq-card-item.active .faq-trigger {
+    background-color: #241B19;
+    color: #FFFFFF;
+    border-color: #241B19;
+    border-radius: 14px 14px 0 0;
+}
+
+.faq-card-item.active .faq-toggle-icon {
+    color: #FFFFFF;
+}
+
+/* Accordion Content Panel */
+.faq-content-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease;
+    background-color: #241B19;
+    border-radius: 0 0 14px 14px;
+}
+
+.faq-card-item.active .faq-content-panel {
+    max-height: 400px;
+}
+
+.faq-content-inner {
+    padding: 0 1.75rem 1.75rem;
+    font-size: 0.96rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1rem;
+}
+
+/* ============================================================
+   ANIMATIONS & TRANSITIONS (Dermix-inspired quality)
+   ============================================================ */
+.fade-up-element {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-up-element.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* ============================================================
+   RESPONSIVE STYLES
+   ============================================================ */
+@media (max-width: 1200px) {
+    .service-layout-container {
+        grid-template-columns: 320px 1fr;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .service-hero-dermiiz {
+        padding: 1.5rem 1.5rem 4rem;
+    }
+
+    .service-layout-container {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .service-sidebar {
+        position: static;
+        order: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-main-content {
+        order: 1;
+    }
+
+    .service-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-benefits-image-wrap {
+        height: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .service-hero-dermiiz {
+        min-height: 500px;
+        padding: 8rem 2rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero-outer {
+        padding: 0.5rem 0.5rem 0;
+    }
+
+    .service-top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+
+    .service-top-bar-right {
+        gap: 1rem;
+    }
+
+    .service-hero-dermiiz {
+        min-height: 440px;
+        border-radius: 0 0 20px 20px;
+        padding: 7rem 1.5rem 3.5rem;
+    }
+
+    .service-hero-content {
+        margin-top: 0;
+    }
+
+    .service-hero-title {
+        font-size: 2.25rem;
+    }
+
+    .service-layout-section {
+        padding: 3.5rem 1rem 4rem;
+    }
+
+    .service-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .service-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-top-image-wrap {
+        height: 280px;
+    }
+
+    .service-block-heading {
+        font-size: 1.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-hero-dermiiz {
+        min-height: 380px;
+        padding: 6.5rem 1rem 3rem;
+    }
+
+    .service-hero-title {
+        font-size: 1.85rem;
+    }
+
+    .sidebar-contact-card {
+        padding: 1.75rem 1.5rem 5rem;
+    }
+
+    .sidebar-contact-avatar {
+        width: 110px;
+        height: 110px;
+        bottom: -10px;
+        right: -10px;
+    }
+
+    .faq-trigger {
+        padding: 1.15rem 1.25rem;
+        font-size: 0.98rem;
+    }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+    .fade-up-element,
+    .service-type-card,
+    .sidebar-service-link,
+    .service-top-image,
+    .faq-content-panel,
+    .faq-toggle-icon {
+        transition: none !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    .fade-up-element {
+        opacity: 1 !important;
+    }
+}

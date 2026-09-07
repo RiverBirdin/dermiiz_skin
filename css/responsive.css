@@ -1,0 +1,387 @@
+/* ============================================================
+   DERMIIZ — RESPONSIVE DESIGN SYSTEM
+   ============================================================ */
+
+/* 1280px Breakpoint */
+@media (max-width: 1280px) {
+    :root {
+        --container-padding: 1.75rem;
+    }
+    .hero-heading {
+        font-size: 3.15rem;
+    }
+    .hero-dermiiz {
+        padding: 8.5rem 2.5rem 4rem;
+        min-height: 660px;
+    }
+    .navbar-wrapper {
+        left: 2rem;
+        right: 2rem;
+    }
+}
+
+/* 1024px (Tablet Landscape) */
+@media (max-width: 1024px) {
+    :root {
+        --fs-4xl: 2.35rem;
+        --fs-3xl: 2.1rem;
+    }
+
+    .hero-wrapper-outer {
+        padding: 0;
+    }
+
+    .top-announcement {
+        border-radius: 0;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .navbar-wrapper {
+        top: 1rem;
+        left: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .nav-links,
+    .navbar-container .btn-dark {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .mobile-nav-panel {
+        display: flex;
+    }
+
+    .hero-dermiiz {
+        border-radius: 0 0 20px 20px;
+        padding: 7.5rem 2rem 14rem;
+        background-position: top right;
+    }
+
+    .hero-heading {
+        font-size: 2.75rem;
+    }
+
+    .hero-review-floating-card {
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+    .services-header-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .services-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-care-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .expertise-dark-section {
+        margin: 2rem 1rem;
+        padding: 4.5rem 1.5rem 3.5rem;
+    }
+
+    .expertise-title-large {
+        font-size: 2.25rem;
+    }
+
+    .expertise-bento-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .trusted-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .transforming-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-card-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-doctor-side {
+        display: none;
+    }
+
+    .before-after-duo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-bento-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .faq-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .footer-grid-4col {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer-main-card {
+        padding: 3.5rem 2.5rem 3rem;
+    }
+
+    .footer-bottom-strip {
+        padding: 1.25rem 2rem;
+    }
+}
+
+/* 768px (Tablet Portrait & Large Mobile) */
+@media (max-width: 768px) {
+    :root {
+        --fs-5xl: 2.5rem;
+        --fs-4xl: 2rem;
+        --fs-2xl: 1.65rem;
+        --container-padding: 1.25rem;
+    }
+
+    .section-padding {
+        padding: 4.5rem 0;
+    }
+
+    .section-padding-lg {
+        padding: 5.5rem 0;
+    }
+
+    .dermiiz-footer-section {
+        padding: 3.5rem 1rem 1.5rem;
+    }
+
+    .footer-main-card {
+        padding: 2.5rem 1.5rem 2rem;
+        border-radius: 20px;
+    }
+
+    .footer-grid-4col {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-bottom-strip {
+        flex-direction: column;
+        gap: 0.85rem;
+        text-align: center;
+        padding: 1.25rem 1.5rem;
+        border-radius: 14px;
+    }
+
+    .collage-container,
+    .layered-showcase,
+    .faq-photos-cluster {
+        height: 380px;
+    }
+
+    .trusted-heading {
+        font-size: 2.25rem;
+    }
+
+    .about-stat-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .top-announcement {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+
+    .hero-dermiiz {
+        padding: 7rem 1.5rem 16rem;
+    }
+
+    .hero-heading {
+        font-size: 2.35rem;
+    }
+
+    .hero-review-floating-card {
+        left: 1.5rem;
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+}
+
+/* 480px (Standard Mobile) */
+@media (max-width: 480px) {
+    :root {
+        --container-padding: 1rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 0.9375rem;
+    }
+
+    .hero-btn-pill {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .testimonial-quote-box {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .faq-accordion-trigger {
+        padding: 1rem 1.25rem;
+        font-size: var(--fs-sm);
+    }
+}
+
+/* ============================================================
+   ABOUT PAGE RESPONSIVE STYLES
+   ============================================================ */
+@media (max-width: 1024px) {
+    .about-hero-dermiiz {
+        min-height: 500px;
+        padding: 8rem 2rem 4rem;
+    }
+    .about-hero-heading {
+        font-size: 2.75rem;
+    }
+    .about-doctors-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .about-doctors-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-tailored-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .tailored-main-img {
+        height: 400px;
+    }
+    .about-destination-section {
+        padding: 4.5rem 2rem;
+        margin: 2rem 1rem;
+    }
+    .about-destination-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    .dest-feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dest-center-portrait {
+        order: -1;
+    }
+    .about-complete-care-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .about-bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-faq-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-dermiiz {
+        min-height: 440px;
+        padding: 7rem 1.5rem 3.5rem;
+    }
+    .about-hero-heading {
+        font-size: 2.25rem;
+    }
+    .about-doctors-grid {
+        grid-template-columns: 1fr;
+    }
+    .complete-care-checks {
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+    .complete-care-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .complete-care-visual-col {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .care-duo-photo-wrap {
+        width: 100%;
+        max-width: 320px;
+    }
+    .care-floating-inset {
+        right: -10px;
+        bottom: -15px;
+    }
+    .care-vertical-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-heading {
+        font-size: 1.85rem;
+    }
+    .about-doctors-title,
+    .tailored-heading,
+    .about-destination-title,
+    .complete-care-title,
+    .about-experience-title,
+    .about-testimonials-title,
+    .about-faq-title {
+        font-size: 2rem;
+    }
+    .tailored-card-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tailored-card-box img {
+        width: 100%;
+        height: 160px;
+    }
+    .about-faq-floating-badge {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: 1.5rem;
+    }
+    .care-floating-inset {
+        width: 175px;
+        height: 110px;
+        right: -5px;
+    }
+    .care-arched-main {
+        height: 350px;
+    }
+}
+
