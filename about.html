@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,7 +55,7 @@
 
                         <!-- SKIN DROPDOWN MEGA-MENU -->
                         <div class="nav-item-dropdown" data-dropdown="skin">
-                            <a href="skin.html" class="nav-link-item has-dropdown" id="navSkinBtn" aria-haspopup="true"
+                            <a href="#" class="nav-link-item has-dropdown" id="navSkinBtn" aria-haspopup="true"
                                 aria-expanded="false">
                                 Skin
                                 <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
@@ -116,7 +116,7 @@
 
                         <!-- HAIR DROPDOWN MEGA-MENU -->
                         <div class="nav-item-dropdown" data-dropdown="hair">
-                            <a href="hair.html" class="nav-link-item has-dropdown" id="navHairBtn" aria-haspopup="true"
+                            <a href="#" class="nav-link-item has-dropdown" id="navHairBtn" aria-haspopup="true"
                                 aria-expanded="false">
                                 Hair
                                 <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
@@ -136,8 +136,9 @@
                                     <div class="dropdown-grid dropdown-grid-hair">
                                         <a href="services/hair-fall-treatment.html" class="dropdown-item"><span
                                                 class="item-dot"></span>Hair Fall Treatment</a>
-                                        <a href="services/prp-hair-treatment.html" class="dropdown-item"><span class="item-dot"></span>PRP
-                                                Hair Treatment</a>
+                                        <a href="services/prp-hair-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>PRP
+                                            Hair Treatment</a>
                                         <a href="services/gfc-hair-therapy.html" class="dropdown-item"><span
                                                 class="item-dot"></span>GFC Hair Therapy</a>
                                         <a href="services/hair-transplant.html" class="dropdown-item"><span
@@ -161,7 +162,7 @@
 
                         <!-- NAIL DROPDOWN MENU -->
                         <div class="nav-item-dropdown" data-dropdown="nail">
-                            <a href="nail.html" class="nav-link-item has-dropdown" id="navNailBtn" aria-haspopup="true"
+                            <a href="#" class="nav-link-item has-dropdown" id="navNailBtn" aria-haspopup="true"
                                 aria-expanded="false">
                                 Nail
                                 <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
@@ -211,11 +212,12 @@
             <div class="container">
                 <div class="about-hero-content">
                     <h1 class="about-hero-heading">Complete care for your<br>skin, hair &amp; nails.</h1>
-                    <div class="about-hero-pill-badge">
-                        <span>About Us</span>
-                        <span>•</span>
-                        <span>Dermiiz</span>
-                    </div>
+
+                    <nav class="service-hero-breadcrumb" aria-label="Breadcrumb">
+                        <a href="../index.html">Dermiiz</a>
+                        <span class="separator">/</span>
+                        <a class="current" href="#">About Us</a>
+                    </nav>
                 </div>
             </div>
         </section>
@@ -255,7 +257,8 @@
                     <a href="services/tattoo-removal.html" class="mobile-sublink">• Tattoo Removal</a>
                     <a href="services/laser-hair-removal.html" class="mobile-sublink">• Laser Hair Removal</a>
                     <a href="services/botox-fillers.html" class="mobile-sublink">• Botox / Fillers / Boosters</a>
-                    <a href="services/glutathione-antioxidants.html" class="mobile-sublink">• Glutathione &amp; Antioxidants</a>
+                    <a href="services/glutathione-antioxidants.html" class="mobile-sublink">• Glutathione &amp;
+                        Antioxidants</a>
                 </div>
             </div>
 
@@ -274,7 +277,8 @@
                     <a href="services/prp-hair-treatment.html" class="mobile-sublink">• PRP Hair Treatment</a>
                     <a href="services/gfc-hair-therapy.html" class="mobile-sublink">• GFC Hair Therapy</a>
                     <a href="services/hair-transplant.html" class="mobile-sublink">• Hair Transplant</a>
-                    <a href="services/dandruff-scalp-treatment.html" class="mobile-sublink">• Dandruff &amp; Scalp Treatment</a>
+                    <a href="services/dandruff-scalp-treatment.html" class="mobile-sublink">• Dandruff &amp; Scalp
+                        Treatment</a>
                     <a href="services/alopecia-treatment.html" class="mobile-sublink">• Alopecia / Hair Loss</a>
                     <a href="services/mesotherapy-hair.html" class="mobile-sublink">• Mesotherapy for Hair</a>
                     <a href="services/hair-thinning-treatment.html" class="mobile-sublink">• Hair Thinning / Density</a>
@@ -296,7 +300,8 @@
                 <div class="mobile-submenu">
                     <a href="services/nail-fungus-treatment.html" class="mobile-sublink">• Nail Fungus Treatment</a>
                     <a href="services/ingrown-nail-treatment.html" class="mobile-sublink">• Ingrown Nail Treatment</a>
-                    <a href="services/nail-disorders-check.html" class="mobile-sublink">• Nail Disorders &amp; Nail Health
+                    <a href="services/nail-disorders-check.html" class="mobile-sublink">• Nail Disorders &amp; Nail
+                        Health
                         Check</a>
                 </div>
             </div>
@@ -324,41 +329,43 @@
                     </div>
                 </div>
 
-                <div class="about-doctors-grid">
+                <div class="about-doctors-grid" id="doctors">
                     <!-- Doctor 1 -->
-                    <div class="doctor-card reveal-card">
+                    <a href="doctors/dr-amirtha.html" class="doctor-card reveal-card">
                         <div class="doctor-card-img-wrap">
                             <img src="assets/images/dr_amirtha_portrait.png"
-                                alt="Dr. Anitha - Senior Dermatologist &amp; Aesthetician">
+                                alt="Dr. Amirtha - Senior Dermatologist &amp; Aesthetician">
                         </div>
                         <div class="doctor-card-body">
                             <h3 class="doctor-card-name">Dr. Amirtha</h3>
                             <p class="doctor-card-role">Senior Dermatologist &amp; Aesthetician</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Doctor 2 -->
-                    <div class="doctor-card reveal-card" style="transition-delay: 0.15s;">
+                    <a href="doctors/dr-gunasekar.html" class="doctor-card reveal-card"
+                        style="transition-delay: 0.15s;">
                         <div class="doctor-card-img-wrap">
                             <img src="assets/images/dr_Gunasekar_portrait.png"
-                                alt="Dr. Rajesh K - Consultant Trichologist">
+                                alt="Dr. Gunasekar - Consultant Trichologist &amp; Hair Specialist">
                         </div>
                         <div class="doctor-card-body">
                             <h3 class="doctor-card-name">Dr. Gunasekar</h3>
                             <p class="doctor-card-role">Consultant Trichologist &amp; Hair Specialist</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Doctor 3 -->
-                    <div class="doctor-card reveal-card" style="transition-delay: 0.3s;">
+                    <a href="doctors/dr-priya.html" class="doctor-card reveal-card" style="transition-delay: 0.3s;">
                         <div class="doctor-card-img-wrap">
-                            <img src="assets/images/doctor_female_3.jpg" alt="Dr. Priya S - Cosmetic Dermatologist">
+                            <img src="assets/images/doctor_female_3.jpg"
+                                alt="Dr. Priya S - Cosmetic Dermatologist &amp; Laser Specialist">
                         </div>
                         <div class="doctor-card-body">
                             <h3 class="doctor-card-name">Dr. Priya S</h3>
                             <p class="doctor-card-role">Cosmetic Dermatologist &amp; Laser Specialist</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="about-experience-strip reveal-fade">

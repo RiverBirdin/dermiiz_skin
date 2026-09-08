@@ -90,11 +90,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // 4. FAQ Accordion Logic
     const faqItems = document.querySelectorAll('.faq-accordion-item');
 
+    // Initialize icons on load
+    faqItems.forEach(function (item) {
+        const icon = item.querySelector('.faq-accordion-icon');
+        if (icon) icon.textContent = item.classList.contains('active') ? '\u2212' : '+';
+    });
+
     faqItems.forEach(function (item) {
         const trigger = item.querySelector('.faq-accordion-trigger');
         const content = item.querySelector('.faq-accordion-content');
 
         if (!trigger || !content) return;
+
+        // Open the default active item on load
+        if (item.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 30 + 'px';
+            trigger.setAttribute('aria-expanded', 'true');
+        }
 
         trigger.addEventListener('click', function () {
             const isActive = item.classList.contains('active');
@@ -104,8 +116,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 otherItem.classList.remove('active');
                 const otherTrigger = otherItem.querySelector('.faq-accordion-trigger');
                 const otherContent = otherItem.querySelector('.faq-accordion-content');
+                const otherIcon = otherItem.querySelector('.faq-accordion-icon');
                 if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
                 if (otherContent) otherContent.style.maxHeight = null;
+                if (otherIcon) otherIcon.textContent = '+';
             });
 
             // If it wasn't active, open it
@@ -113,6 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.classList.add('active');
                 trigger.setAttribute('aria-expanded', 'true');
                 content.style.maxHeight = content.scrollHeight + 30 + 'px';
+                const icon = item.querySelector('.faq-accordion-icon');
+                if (icon) icon.textContent = '\u2212';
             }
         });
     });

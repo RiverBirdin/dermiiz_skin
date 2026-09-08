@@ -1,0 +1,792 @@
+/* ============================================================
+   DERMIIZ — INDIVIDUAL DOCTOR PROFILE STYLESHEET
+   Accurately crafted to match the reference UI:
+   - Doctor Hero with Clinic Backdrop
+   - 2-Column Overview (Portrait + Callout Card | About Me + Skills)
+   - Approach to Care (3 Steps with Step Numbers 01, 02, 03)
+   - Get In Touch Form (Dark Card)
+   - Dermiiz Design System: Dark Brown #302522, Warm Off-White #F8F2EB, Peach #F8E3CB
+   ============================================================ */
+
+/* ============================================================
+   PAGE BASE
+   ============================================================ */
+body.doctor-profile-page {
+    background-color: #F8F2EB;
+    color: #302522;
+    font-family: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   HERO BANNER
+   ============================================================ */
+.doctor-hero-banner {
+    position: relative;
+    background-color: #241B19;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    color: #FFFFFF;
+    min-height: 590px;
+    border-radius: 0 0 28px 28px;
+    padding: 10rem 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+/* Doctor-specific hero backgrounds */
+.hero-amirtha {
+    background-image: linear-gradient(to right, rgba(28, 20, 18, 0.94) 0%, rgba(28, 20, 18, 0.5) 28%, rgba(28, 20, 18, 0.18) 68%),
+        url('../assets/images/doctor_page_hero_banner_1.png');
+}
+
+.hero-gunasekar {
+    background-image: linear-gradient(to right, rgba(28, 20, 18, 0.94) 0%, rgba(28, 20, 18, 0.65) 28%, rgba(28, 20, 18, 0.22) 68%),
+        url('../assets/images/doctor_page_hero_banner_2.png');
+}
+
+.hero-priya {
+    background-image: linear-gradient(to right, rgba(28, 20, 18, 0.94) 0%, rgba(28, 20, 18, 0.65) 28%, rgba(28, 20, 18, 0.22) 68%),
+        url('../assets/images/Doctor_clinic_1.png');
+}
+
+.doctor-hero-content {
+    max-width: 680px;
+    position: relative;
+    z-index: 2;
+}
+
+.doctor-hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #E8DFD7;
+    margin-bottom: 0.75rem;
+}
+
+.doctor-hero-eyebrow .eyebrow-line {
+    width: 32px;
+    height: 1px;
+    background: rgba(232, 223, 215, 0.8);
+    display: inline-block;
+}
+
+.doctor-hero-name {
+    font-size: clamp(2.6rem, 5.2vw, 3.85rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+    margin: 0 0 1rem;
+}
+
+.doctor-hero-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.doctor-hero-breadcrumb a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.doctor-hero-breadcrumb a:hover {
+    color: #F8E3CB;
+}
+
+.doctor-hero-breadcrumb .sep {
+    opacity: 0.45;
+}
+
+.doctor-hero-breadcrumb .current {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* ============================================================
+   MAIN CONTENT WRAPPER
+   ============================================================ */
+.doctor-profile-main {
+    width: 100%;
+    background-color: #F8F2EB;
+}
+
+/* Common Typography & Headings */
+.dp-heading {
+    font-size: 2.35rem;
+    font-weight: 600;
+    color: #302522;
+    letter-spacing: -0.025em;
+    margin: 0 0 1.25rem;
+    line-height: 1.2;
+}
+
+.dp-body-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #584C47;
+    margin: 0 0 1.15rem;
+}
+
+/* ============================================================
+   SECTION 1: OVERVIEW (TWO COLUMNS)
+   ============================================================ */
+.dp-overview-section {
+    padding: 5rem 1.5rem 3rem;
+}
+
+.dp-overview-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 390px 1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+/* Left Column */
+.dp-left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Doctor Portrait Card */
+.dp-portrait-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #E6DCD2;
+    box-shadow: 0 12px 35px rgba(48, 37, 34, 0.08);
+    aspect-ratio: 3/4;
+    position: relative;
+}
+
+.dp-portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dp-portrait-card:hover .dp-portrait-img {
+    transform: scale(1.03);
+}
+
+/* Contact Us Today! Callout Card */
+.dp-callout-card {
+    background-color: #302522;
+    border-radius: 20px;
+    padding: 2.25rem 2rem;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    min-height: 240px;
+    box-shadow: 0 12px 35px rgba(48, 37, 34, 0.14);
+}
+
+.dp-callout-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 0 0.85rem;
+}
+
+.dp-callout-desc {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0 0 1.5rem;
+    max-width: 220px;
+}
+
+.dp-callout-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.dp-callout-link svg {
+    transition: transform 0.25s ease;
+}
+
+.dp-callout-link:hover {
+    color: #F8E3CB;
+}
+
+.dp-callout-link:hover svg {
+    transform: translate(3px, -3px);
+}
+
+/* Callout Circular Image */
+.dp-callout-circle {
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #302522;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.dp-callout-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Right Column */
+.dp-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+}
+
+/* About Me Block */
+.dp-bio-block {
+    position: relative;
+}
+
+/* Info Card (White Box with Email & Address) */
+.dp-info-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 6px 25px rgba(48, 37, 34, 0.05);
+    border: 1px solid rgba(48, 37, 34, 0.06);
+    margin: 1.5rem 0;
+}
+
+.dp-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.dp-info-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #302522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-shrink: 0;
+}
+
+.dp-info-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+}
+
+.dp-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+}
+
+.dp-info-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #8A7D78;
+    text-transform: capitalize;
+}
+
+.dp-info-val {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #302522;
+    text-decoration: none;
+    word-break: break-word;
+    transition: color 0.2s ease;
+}
+
+a.dp-info-val:hover {
+    color: #8B5E3C;
+}
+
+.dp-info-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(48, 37, 34, 0.1);
+    flex-shrink: 0;
+}
+
+/* Socials Block */
+.dp-social-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.dp-social-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #302522;
+}
+
+.dp-social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.dp-social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(48, 37, 34, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #302522;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.dp-social-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.dp-social-btn:hover {
+    background: #302522;
+    color: #FFFFFF;
+    border-color: #302522;
+    transform: translateY(-2px);
+}
+
+/* Skills & Expertise Block */
+.dp-skills-block {
+    position: relative;
+}
+
+.dp-skills-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 2.25rem 2rem;
+    box-shadow: 0 6px 25px rgba(48, 37, 34, 0.05);
+    border: 1px solid rgba(48, 37, 34, 0.06);
+    margin-top: 1.5rem;
+}
+
+.dp-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem 2.5rem;
+}
+
+.dp-skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.dp-skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.dp-skill-title {
+    font-weight: 600;
+    color: #302522;
+}
+
+.dp-skill-percent {
+    font-weight: 700;
+    color: #302522;
+}
+
+.dp-skill-track {
+    width: 100%;
+    height: 6px;
+    background: #ECE6DF;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dp-skill-fill {
+    height: 100%;
+    background: #302522;
+    border-radius: 999px;
+    width: 0;
+    transition: width 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* ============================================================
+   SECTION 2: APPROACH TO CARE
+   ============================================================ */
+.dp-approach-section {
+    padding: 2.5rem 1.5rem 4.5rem;
+}
+
+.dp-approach-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.dp-approach-header {
+    margin-bottom: 2.5rem;
+}
+
+.dp-approach-desc {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #584C47;
+    max-width: 860px;
+    margin: 0;
+}
+
+.dp-approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+.dp-approach-card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 2.75rem 2rem 2.25rem;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(48, 37, 34, 0.05);
+    border: 1px solid rgba(48, 37, 34, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dp-approach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(48, 37, 34, 0.1);
+}
+
+.dp-step-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #302522;
+}
+
+.dp-step-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #302522;
+    margin: 0 0 0.5rem;
+}
+
+.dp-step-desc {
+    font-size: 0.875rem;
+    color: #736762;
+    line-height: 1.55;
+    margin: 0 0 1.75rem;
+    flex-grow: 1;
+}
+
+.dp-step-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #302522;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    box-shadow: 0 4px 12px rgba(48, 37, 34, 0.15);
+}
+
+/* ============================================================
+   SECTION 3: GET IN TOUCH (DARK FORM CARD)
+   ============================================================ */
+.dp-form-section {
+    padding: 0 1.5rem 5.5rem;
+}
+
+.dp-form-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.dp-form-card {
+    background-color: #302522;
+    border-radius: 24px;
+    padding: 3.5rem 4rem;
+    color: #FFFFFF;
+    box-shadow: 0 20px 50px rgba(48, 37, 34, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.dp-form-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 0 2rem;
+    letter-spacing: -0.02em;
+}
+
+.dp-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.dp-form-field {
+    width: 100%;
+}
+
+.dp-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    font-size: 0.9375rem;
+    color: #FFFFFF;
+    font-family: inherit;
+    transition: border-color 0.2s, background-color 0.2s;
+    box-sizing: border-box;
+}
+
+.dp-input::placeholder {
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.dp-input:focus {
+    outline: none;
+    border-color: #F8E3CB;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+textarea.dp-input {
+    min-height: 120px;
+    resize: vertical;
+    margin-bottom: 1.5rem;
+}
+
+.dp-btn-submit {
+    background: #FFFFFF;
+    color: #302522;
+    border: none;
+    border-radius: 999px;
+    padding: 0.95rem 2.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+.dp-btn-submit:hover {
+    background: #F8E3CB;
+    color: #302522;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dp-form-alert {
+    background: rgba(210, 224, 84, 0.15);
+    border: 1px solid #D2E054;
+    color: #D2E054;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    margin-top: 1.25rem;
+    display: none;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ============================================================ */
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+    .dp-overview-container {
+        grid-template-columns: 340px 1fr;
+        gap: 2.5rem;
+    }
+
+    .dp-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .dp-form-card {
+        padding: 3rem 2.5rem;
+    }
+}
+
+/* 768px and below (Mobile / Tablet) */
+@media (max-width: 768px) {
+    .doctor-hero-banner {
+        padding: 8.5rem 1.5rem 3.5rem;
+        min-height: 460px;
+    }
+
+    .dp-overview-section {
+        padding: 3.5rem 1.25rem 2rem;
+    }
+
+    .dp-overview-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .dp-portrait-card {
+        max-width: 420px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .dp-callout-card {
+        max-width: 420px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .dp-info-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .dp-info-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .dp-approach-section {
+        padding: 2rem 1.25rem 3.5rem;
+    }
+
+    .dp-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .dp-form-section {
+        padding: 0 1.25rem 4rem;
+    }
+
+    .dp-form-card {
+        padding: 2.5rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .dp-form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .dp-heading {
+        font-size: 2rem;
+    }
+
+    .dp-form-title {
+        font-size: 1.85rem;
+    }
+}
+
+/* 480px and below (Small Mobile) */
+@media (max-width: 480px) {
+    .doctor-hero-banner {
+        padding: 7.5rem 1.25rem 3rem;
+        min-height: 420px;
+    }
+
+    .doctor-hero-name {
+        font-size: 2.25rem;
+    }
+
+    .dp-heading {
+        font-size: 1.75rem;
+    }
+
+    .dp-form-title {
+        font-size: 1.65rem;
+    }
+
+    .dp-skills-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .dp-btn-submit {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dp-social-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+}
+
+/* ============================================================
+   REDUCED MOTION SUPPORT
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .dp-skill-fill {
+        transition: none !important;
+    }
+}
