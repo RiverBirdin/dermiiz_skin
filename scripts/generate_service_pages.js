@@ -2148,7 +2148,7 @@ function buildServicePageHTML(service) {
                                     <div class="dropdown-header">
                                         <div class="dropdown-header-left">
                                             <span class="dropdown-pill-badge">Podiatry &amp; Aesthetics</span>
-                                            <span class="dropdown-count-badge">3 Specialized Services</span>
+                                            <span class="dropdown-count-badge">3 Specialized Treatments</span>
                                         </div>
                                         <a href="../nail.html" class="dropdown-view-all">View All Nail Care →</a>
                                     </div>
@@ -2161,7 +2161,8 @@ function buildServicePageHTML(service) {
                             </div>
                         </div>
 
-                        <a href="../services.html" class="nav-link-item">Blog</a>
+                        <a href="../gallery.html" class="nav-link-item">Gallery</a>
+                        <a href="../blog.html" class="nav-link-item">Blog</a>
                         <a href="../contact.html" class="nav-link-item">Contact Us</a>
                     </nav>
 
@@ -2184,7 +2185,7 @@ function buildServicePageHTML(service) {
                 <nav class="service-hero-breadcrumb" aria-label="Breadcrumb">
                     <a href="../index.html">Home</a>
                     <span class="separator">/</span>
-                    <a href="../${service.category.toLowerCase()}.html">Services</a>
+                    <a href="../${service.category.toLowerCase()}.html">Treatments</a>
                     <span class="separator">/</span>
                     <span class="current">${service.title}</span>
                 </nav>
@@ -2271,7 +2272,8 @@ function buildServicePageHTML(service) {
                 </div>
             </div>
 
-            <a href="../services.html" class="mobile-nav-link">Blog <span>→</span></a>
+            <a href="../gallery.html" class="mobile-nav-link">Gallery <span>→</span></a>
+            <a href="../blog.html" class="mobile-nav-link">Blog <span>→</span></a>
             <a href="../contact.html" class="mobile-nav-link">Contact Us <span>→</span></a>
         </nav>
         <a href="../contact.html" class="btn btn-dark" style="width: 100%;">Book an Appointment</a>
@@ -2288,12 +2290,12 @@ function buildServicePageHTML(service) {
                  ============================================================ -->
             <aside class="service-sidebar">
 
-                <!-- Widget 1: Explore Our Services -->
+                <!-- Widget 1: Explore Our Treatments -->
                 <div class="sidebar-explore-card fade-up-element">
                     <div class="sidebar-explore-header">
-                        Explore Our Services
+                        Explore Our Treatments
                     </div>
-                    <nav class="sidebar-explore-list" aria-label="Related Services">
+                    <nav class="sidebar-explore-list" aria-label="Related Treatments">
                         ${related.map(r => `
                         <a href="${r.slug}.html" class="sidebar-service-link ${r.slug === service.slug ? 'active' : ''}">
                             <span>${r.title}</span>
@@ -2455,15 +2457,15 @@ function buildServicePageHTML(service) {
                         <ul class="footer-menu">
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="../about.html">About Us</a></li>
-                            <li><a href="../services.html">Services</a></li>
+                            <li><a href="../gallery.html">Gallery</a></li>
                             <li><a href="../about.html">Doctors</a></li>
-                            <li><a href="../services.html">Blog</a></li>
+                            <li><a href="../blog.html">Blog</a></li>
                         </ul>
                     </div>
 
-                    <!-- Col 3: Services -->
+                    <!-- Col 3: Treatments -->
                     <div class="footer-links-col">
-                        <h4 class="footer-title">Services</h4>
+                        <h4 class="footer-title">Treatments</h4>
                         <ul class="footer-menu">
                             <li><a href="../skin.html">Skin Care</a></li>
                             <li><a href="../hair.html">Hair Care</a></li>
