@@ -344,11 +344,13 @@
    ABOUT PAGE RESPONSIVE STYLES
    ============================================================ */
 @media (max-width: 1024px) {
-    .about-hero-dermiiz {
+    .about-hero-dermiiz,
+    .treatment-hero-banner {
         min-height: 500px;
         padding: 8rem 2rem 4rem;
     }
-    .about-hero-heading {
+    .about-hero-heading,
+    .treatment-hero-heading {
         font-size: 2.75rem;
     }
     .about-doctors-header {
@@ -400,11 +402,13 @@
 }
 
 @media (max-width: 768px) {
-    .about-hero-dermiiz {
+    .about-hero-dermiiz,
+    .treatment-hero-banner {
         min-height: 440px;
         padding: 7rem 1.5rem 3.5rem;
     }
-    .about-hero-heading {
+    .about-hero-heading,
+    .treatment-hero-heading {
         font-size: 2.25rem;
     }
     .about-doctors-grid {
@@ -439,7 +443,8 @@
 }
 
 @media (max-width: 480px) {
-    .about-hero-heading {
+    .about-hero-heading,
+    .treatment-hero-heading {
         font-size: 1.85rem;
     }
     .about-doctors-title,

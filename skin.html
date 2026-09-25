@@ -1,157 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dermiiz Skin Care Treatments — Medical treatments for acne, pigmentation, anti-ageing, glow therapy, and laser resurfacing.">
-    <title>Skin Treatments &amp; Care — DERMIIZ</title>
+    <meta name="description"
+        content="Dermiiz Skin Care Treatments — Medical treatments for acne, pigmentation, anti-ageing, glow therapy, and laser resurfacing in Trichy.">
+    <title>Skin Treatments &amp; Care — DERMIIZ Clinical Dermatology</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
 
-    <!-- Top Announcement Strip -->
-    <div class="top-announcement">
-        <div class="container top-announcement-inner">
-            <div class="top-announcement-badge">
-                <span>🌿</span>
-                <span>Advanced Aesthetic &amp; Clinical Dermatology Center</span>
+<body class="treatment-page">
+
+    <!-- HERO WRAPPER WITH TOP ANNOUNCEMENT & FLOATING NAVBAR -->
+    <div class="hero-wrapper-outer">
+
+        <!-- Top Announcement Strip (Lime/Chartreuse) -->
+        <div class="top-announcement">
+            <div>
+                Ready to Transform Your Skin? <a href="contact.html">Consult Our Specialists Now</a>
             </div>
-            <div class="top-announcement-contact">
-                <span>📞 Call: <a href="tel:+919876543210">+91 98765 43210</a></span>
-                <span>🕒 Mon - Sat: 9:00 AM - 7:00 PM</span>
+            <div class="top-announcement-links">
+                <a href="contact.html">Help</a>
+                <span>|</span>
+                <a href="contact.html">Support</a>
+                <span>|</span>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
-    </div>
 
-    <!-- Floating Navbar -->
-    <header class="navbar-wrapper" id="navbar">
-        <div class="navbar-container">
-                <a href="index.html" class="navbar-logo" aria-label="Dermiiz Home">
-                    <img src="assets/images/dermiiz_logo_black.png" alt="DERMIIZ Skin and Hair Clinic">
-                </a>
+        <!-- Skin Hero Banner Section with Background Image -->
+        <section class="treatment-hero-banner reveal-fade"
+            style="background-image: linear-gradient(to right, rgba(28, 20, 18, 0.92) 0%, rgba(28, 20, 18, 0.58) 50%, rgba(28, 20, 18, 0.20) 100%), url('assets/treatment/skin_hero_banner.png');"
+            aria-label="Skin Treatments Hero Section">
 
-                <nav class="nav-links" aria-label="Main Navigation">
-                    <a href="index.html" class="nav-link-item">Home</a>
-                    <a href="about.html" class="nav-link-item">About Us</a>
+            <!-- Floating White Pill Navbar -->
+            <header class="navbar-wrapper" id="navbar">
+                <div class="navbar-container">
+                    <!-- Brand Logo -->
+                    <a href="index.html" class="navbar-logo" aria-label="Dermiiz Home">
+                        <img src="assets/images/dermiiz_logo_black.png" alt="DERMIIZ Skin and Hair Clinic">
+                    </a>
 
-                    <!-- SKIN DROPDOWN MEGA-MENU (ACTIVE) -->
-                    <div class="nav-item-dropdown" data-dropdown="skin">
-                        <a href="#" class="nav-link-item has-dropdown active" id="navSkinBtn" aria-haspopup="true" aria-expanded="false">
-                            Skin
-                            <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
-                                <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-skin" aria-labelledby="navSkinBtn">
-                            <div class="dropdown-inner">
-                                <div class="dropdown-header">
+                    <!-- Desktop Navigation Links with Dropdown Mega-Menus -->
+                    <nav class="nav-links" aria-label="Main Navigation">
+                        <a href="index.html" class="nav-link-item">Home</a>
+                        <a href="about.html" class="nav-link-item">About Us</a>
+
+                        <!-- SKIN DROPDOWN MEGA-MENU (ACTIVE) -->
+                        <div class="nav-item-dropdown" data-dropdown="skin">
+                            <a href="skin.html" class="nav-link-item has-dropdown active" id="navSkinBtn"
+                                aria-haspopup="true" aria-expanded="false">
+                                Skin
+                                <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
+                                    <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-skin" aria-labelledby="navSkinBtn">
+                                <div class="dropdown-inner">
+                                    <div class="dropdown-header">
                                         <div class="dropdown-header-left">
                                             <span class="dropdown-count-badge">18 Specialized Treatments</span>
                                         </div>
                                     </div>
-                                <div class="dropdown-grid dropdown-grid-skin">
-                                    <a href="services/acne-treatment.html" class="dropdown-item"><span class="item-dot"></span>Acne Treatment</a>
-                                    <a href="services/acne-scars-treatment.html" class="dropdown-item"><span class="item-dot"></span>Acne Scars Treatment</a>
-                                    <a href="services/pigmentation-treatment.html" class="dropdown-item"><span class="item-dot"></span>Pigmentation / Melasma</a>
-                                    <a href="services/anti-aging-treatment.html" class="dropdown-item"><span class="item-dot"></span>Anti-Aging &amp; Wrinkle</a>
-                                    <a href="services/chemical-peels.html" class="dropdown-item"><span class="item-dot"></span>Chemical Peels</a>
-                                    <a href="services/laser-toning.html" class="dropdown-item"><span class="item-dot"></span>Laser Toning</a>
-                                    <a href="services/medi-facial.html" class="dropdown-item"><span class="item-dot"></span>Medi-Facial</a>
-                                    <a href="services/skin-brightening.html" class="dropdown-item"><span class="item-dot"></span>Skin Brightening</a>
-                                    <a href="services/psoriasis-treatment.html" class="dropdown-item"><span class="item-dot"></span>Psoriasis Treatment</a>
-                                    <a href="services/fungal-skin-infection.html" class="dropdown-item"><span class="item-dot"></span>Fungal Skin Infection</a>
-                                    <a href="services/skin-allergy.html" class="dropdown-item"><span class="item-dot"></span>Skin Allergy</a>
-                                    <a href="services/dark-circles.html" class="dropdown-item"><span class="item-dot"></span>Dark Circles</a>
-                                    <a href="services/warts-moles.html" class="dropdown-item"><span class="item-dot"></span>Warts / Moles</a>
-                                    <a href="services/vitiligo-treatment.html" class="dropdown-item"><span class="item-dot"></span>Vitiligo</a>
-                                    <a href="services/tattoo-removal.html" class="dropdown-item"><span class="item-dot"></span>Tattoo Removal</a>
-                                    <a href="services/laser-hair-removal.html" class="dropdown-item"><span class="item-dot"></span>Laser Hair Removal</a>
-                                    <a href="services/botox-fillers.html" class="dropdown-item"><span class="item-dot"></span>Botox / Fillers / Boosters</a>
-                                    <a href="services/glutathione-antioxidants.html" class="dropdown-item"><span class="item-dot"></span>Glutathione &amp; Antioxidants</a>
+                                    <div class="dropdown-grid dropdown-grid-skin">
+                                        <a href="services/acne-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Acne Treatment</a>
+                                        <a href="services/acne-scars-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Acne Scars Treatment</a>
+                                        <a href="services/pigmentation-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Pigmentation / Melasma</a>
+                                        <a href="services/anti-aging-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Anti-Aging &amp; Wrinkle</a>
+                                        <a href="services/chemical-peels.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Chemical Peels</a>
+                                        <a href="services/laser-toning.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Laser Toning</a>
+                                        <a href="services/medi-facial.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Medi-Facial</a>
+                                        <a href="services/skin-brightening.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Skin Brightening</a>
+                                        <a href="services/psoriasis-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Psoriasis Treatment</a>
+                                        <a href="services/fungal-skin-infection.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Fungal Skin Infection</a>
+                                        <a href="services/skin-allergy.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Skin Allergy</a>
+                                        <a href="services/dark-circles.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Dark Circles</a>
+                                        <a href="services/warts-moles.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Warts / Moles</a>
+                                        <a href="services/vitiligo-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Vitiligo</a>
+                                        <a href="services/tattoo-removal.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Tattoo Removal</a>
+                                        <a href="services/laser-hair-removal.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Laser Hair Removal</a>
+                                        <a href="services/botox-fillers.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Botox / Fillers / Boosters</a>
+                                        <a href="services/glutathione-antioxidants.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Glutathione &amp; Antioxidants</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- HAIR DROPDOWN MEGA-MENU -->
-                    <div class="nav-item-dropdown" data-dropdown="hair">
-                        <a href="#" class="nav-link-item has-dropdown" id="navHairBtn" aria-haspopup="true" aria-expanded="false">
-                            Hair
-                            <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
-                                <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-hair" aria-labelledby="navHairBtn">
-                            <div class="dropdown-inner">
-                                <div class="dropdown-header">
+                        <!-- HAIR DROPDOWN MEGA-MENU -->
+                        <div class="nav-item-dropdown" data-dropdown="hair">
+                            <a href="hair.html" class="nav-link-item has-dropdown" id="navHairBtn" aria-haspopup="true"
+                                aria-expanded="false">
+                                Hair
+                                <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
+                                    <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-hair" aria-labelledby="navHairBtn">
+                                <div class="dropdown-inner">
+                                    <div class="dropdown-header">
                                         <div class="dropdown-header-left">
                                             <span class="dropdown-count-badge">10 Advanced Therapies</span>
                                         </div>
                                     </div>
-                                <div class="dropdown-grid dropdown-grid-hair">
-                                    <a href="services/hair-fall-treatment.html" class="dropdown-item"><span class="item-dot"></span>Hair Fall Treatment</a>
-                                    <a href="services/prp-hair-treatment.html" class="dropdown-item"><span class="item-dot"></span>PRP Hair Treatment</a>
-                                    <a href="services/gfc-hair-therapy.html" class="dropdown-item"><span class="item-dot"></span>GFC Hair Therapy</a>
-                                    <a href="services/hair-transplant.html" class="dropdown-item"><span class="item-dot"></span>Hair Transplant</a>
-                                    <a href="services/dandruff-scalp-treatment.html" class="dropdown-item"><span class="item-dot"></span>Dandruff &amp; Scalp Treatment</a>
-                                    <a href="services/alopecia-treatment.html" class="dropdown-item"><span class="item-dot"></span>Alopecia / Hair Loss</a>
-                                    <a href="services/mesotherapy-hair.html" class="dropdown-item"><span class="item-dot"></span>Mesotherapy for Hair</a>
-                                    <a href="services/hair-thinning-treatment.html" class="dropdown-item"><span class="item-dot"></span>Hair Thinning / Density</a>
-                                    <a href="services/stem-cells-hair.html" class="dropdown-item"><span class="item-dot"></span>Stem Cells Treatment</a>
-                                    <a href="services/laser-therapy-hair.html" class="dropdown-item"><span class="item-dot"></span>Laser Therapy for Hair</a>
+                                    <div class="dropdown-grid dropdown-grid-hair">
+                                        <a href="services/hair-fall-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Hair Fall Treatment</a>
+                                        <a href="services/prp-hair-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>PRP Hair Treatment</a>
+                                        <a href="services/gfc-hair-therapy.html" class="dropdown-item"><span
+                                                class="item-dot"></span>GFC Hair Therapy</a>
+                                        <a href="services/hair-transplant.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Hair Transplant</a>
+                                        <a href="services/dandruff-scalp-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Dandruff &amp; Scalp Treatment</a>
+                                        <a href="services/alopecia-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Alopecia / Hair Loss</a>
+                                        <a href="services/mesotherapy-hair.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Mesotherapy for Hair</a>
+                                        <a href="services/hair-thinning-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Hair Thinning / Density</a>
+                                        <a href="services/stem-cells-hair.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Stem Cells Treatment</a>
+                                        <a href="services/laser-therapy-hair.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Laser Therapy for Hair</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- NAIL DROPDOWN MENU -->
-                    <div class="nav-item-dropdown" data-dropdown="nail">
-                        <a href="#" class="nav-link-item has-dropdown" id="navNailBtn" aria-haspopup="true" aria-expanded="false">
-                            Nail
-                            <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
-                                <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-nail" aria-labelledby="navNailBtn">
-                            <div class="dropdown-inner">
-                                <div class="dropdown-header">
+                        <!-- NAIL DROPDOWN MENU -->
+                        <div class="nav-item-dropdown" data-dropdown="nail">
+                            <a href="nail.html" class="nav-link-item has-dropdown" id="navNailBtn" aria-haspopup="true"
+                                aria-expanded="false">
+                                Nail
+                                <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
+                                    <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-nail" aria-labelledby="navNailBtn">
+                                <div class="dropdown-inner">
+                                    <div class="dropdown-header">
                                         <div class="dropdown-header-left">
                                             <span class="dropdown-count-badge">3 Specialized Services</span>
                                         </div>
                                     </div>
-                                <div class="dropdown-grid dropdown-grid-nail">
-                                    <a href="services/nail-fungus-treatment.html" class="dropdown-item"><span class="item-dot"></span>Nail Fungus Treatment</a>
-                                    <a href="services/ingrown-nail-treatment.html" class="dropdown-item"><span class="item-dot"></span>Ingrown Nail Treatment</a>
-                                    <a href="services/nail-disorders-check.html" class="dropdown-item"><span class="item-dot"></span>Nail Disorders &amp; Nail Health Check</a>
+                                    <div class="dropdown-grid dropdown-grid-nail">
+                                        <a href="services/nail-fungus-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Nail Fungus Treatment</a>
+                                        <a href="services/ingrown-nail-treatment.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Ingrown Nail Treatment</a>
+                                        <a href="services/nail-disorders-check.html" class="dropdown-item"><span
+                                                class="item-dot"></span>Nail Disorders &amp; Nail Health Check</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <a href="gallery.html" class="nav-link-item">Gallery</a>
+                        <a href="gallery.html" class="nav-link-item">Gallery</a>
                         <a href="services.html" class="nav-link-item">Blog</a>
-                    <a href="contact.html" class="nav-link-item">Contact Us</a>
-                </nav>
+                        <a href="contact.html" class="nav-link-item">Contact Us</a>
+                    </nav>
 
-                <!-- Action Button -->
-                <a href="contact.html" class="btn btn-dark">
-                    Book An Appointment
-                </a>
+                    <!-- Action Button -->
+                    <a href="contact.html" class="btn btn-dark" id="navBookBtn">
+                        Book An Appointment
+                    </a>
 
-                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    <!-- Hamburger Button -->
+                    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Hero Banner Content -->
+            <div class="treatment-hero-content">
+                <h1 class="treatment-hero-heading">Targeted Skin Care &amp;<br>Medical Aesthetics</h1>
+                <div class="treatment-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Skin Care</span>
+                </div>
             </div>
-    </header>
+
+        </section>
+    </div><!-- /hero-wrapper-outer -->
 
     <!-- Mobile Nav Panel with Accordions -->
     <div class="mobile-nav-panel" id="mobileNavPanel">
@@ -164,7 +229,9 @@
                 <div class="mobile-nav-header-row">
                     <a href="skin.html" class="mobile-nav-link" style="color: #000; font-weight: 700;">Skin Care</a>
                     <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Skin Submenu">
-                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor"><path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor">
+                            <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mobile-submenu">
@@ -185,7 +252,8 @@
                     <a href="services/tattoo-removal.html" class="mobile-sublink">• Tattoo Removal</a>
                     <a href="services/laser-hair-removal.html" class="mobile-sublink">• Laser Hair Removal</a>
                     <a href="services/botox-fillers.html" class="mobile-sublink">• Botox / Fillers / Boosters</a>
-                    <a href="services/glutathione-antioxidants.html" class="mobile-sublink">• Glutathione &amp; Antioxidants</a>
+                    <a href="services/glutathione-antioxidants.html" class="mobile-sublink">• Glutathione &amp;
+                        Antioxidants</a>
                 </div>
             </div>
 
@@ -194,7 +262,9 @@
                 <div class="mobile-nav-header-row">
                     <a href="hair.html" class="mobile-nav-link">Hair Care</a>
                     <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Hair Submenu">
-                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor"><path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor">
+                            <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mobile-submenu">
@@ -202,7 +272,8 @@
                     <a href="services/prp-hair-treatment.html" class="mobile-sublink">• PRP Hair Treatment</a>
                     <a href="services/gfc-hair-therapy.html" class="mobile-sublink">• GFC Hair Therapy</a>
                     <a href="services/hair-transplant.html" class="mobile-sublink">• Hair Transplant</a>
-                    <a href="services/dandruff-scalp-treatment.html" class="mobile-sublink">• Dandruff &amp; Scalp Treatment</a>
+                    <a href="services/dandruff-scalp-treatment.html" class="mobile-sublink">• Dandruff &amp; Scalp
+                        Treatment</a>
                     <a href="services/alopecia-treatment.html" class="mobile-sublink">• Alopecia / Hair Loss</a>
                     <a href="services/mesotherapy-hair.html" class="mobile-sublink">• Mesotherapy for Hair</a>
                     <a href="services/hair-thinning-treatment.html" class="mobile-sublink">• Hair Thinning / Density</a>
@@ -216,13 +287,16 @@
                 <div class="mobile-nav-header-row">
                     <a href="nail.html" class="mobile-nav-link">Nail Care</a>
                     <button type="button" class="mobile-submenu-toggle" aria-label="Toggle Nail Submenu">
-                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor"><path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor">
+                            <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </button>
                 </div>
                 <div class="mobile-submenu">
                     <a href="services/nail-fungus-treatment.html" class="mobile-sublink">• Nail Fungus Treatment</a>
                     <a href="services/ingrown-nail-treatment.html" class="mobile-sublink">• Ingrown Nail Treatment</a>
-                    <a href="services/nail-disorders-check.html" class="mobile-sublink">• Nail Disorders &amp; Nail Health Check</a>
+                    <a href="services/nail-disorders-check.html" class="mobile-sublink">• Nail Disorders &amp; Nail
+                        Health Check</a>
                 </div>
             </div>
 
@@ -233,54 +307,315 @@
         <a href="contact.html" class="btn btn-dark" style="width: 100%;">Book an Appointment</a>
     </div>
 
+    <!-- MAIN CONTENT -->
     <main>
-        <section class="inner-page-hero"
-            style="background-image: linear-gradient(rgba(28, 20, 18, 0.88), rgba(28, 20, 18, 0.78)), url('assets/treatment/skin_hero_banner.png'); background-size: cover; background-position: center;">
-            <div class="container">
-                <div class="section-tag light" style="justify-content: center;">Clinical Dermatology</div>
-                <h1 class="inner-page-hero-title">Targeted Skin Care &amp; Medical Aesthetics.</h1>
-                <p class="inner-page-hero-desc">From stubborn acne and melasma to advanced anti-ageing laser treatments, we craft solutions tailored to your unique skin profile.</p>
-            </div>
-        </section>
-
-        <!-- Treatments Grid -->
+        <!-- Treatments Grid Section -->
         <section class="transforming-section">
             <div class="container">
-                <div style="text-align: center; max-width: 600px; margin: 0 auto 3rem;">
-                    <div class="section-tag" style="justify-content: center;">Our Procedures</div>
+                <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
                     <h2 class="section-title">Specialized Skin Treatments</h2>
+
                 </div>
 
                 <div class="transforming-grid" style="margin-top: 0;">
-                    <article class="treatment-showcase-card">
-                        <div class="treatment-card-thumbnail">
-                            <img src="assets/images/skin-service.jpg" alt="Chemical Peels" loading="lazy">
-                        </div>
-                        <div class="treatment-card-info">
-                            <span class="treatment-card-info-title">Medical Chemical Peels</span>
-                            <div class="treatment-card-arrow">→</div>
-                        </div>
-                    </article>
 
-                    <article class="treatment-showcase-card">
+                    <!-- 1. Acne Treatment -->
+                    <a href="services/acne-treatment.html" class="treatment-showcase-card reveal-up">
                         <div class="treatment-card-thumbnail">
-                            <img src="assets/images/clinic-interior.jpg" alt="Laser Skin Toning" loading="lazy">
+                            <img src="assets/treatment/acne-treatment_banner.png" alt="Acne Treatment" loading="lazy">
                         </div>
                         <div class="treatment-card-info">
-                            <span class="treatment-card-info-title">Q-Switched Laser Toning</span>
-                            <div class="treatment-card-arrow">→</div>
+                            <span class="treatment-card-info-title">Acne Treatment</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="treatment-showcase-card">
+                    <!-- 2. Acne Scars Treatment -->
+                    <a href="services/acne-scars-treatment.html" class="treatment-showcase-card reveal-up">
                         <div class="treatment-card-thumbnail">
-                            <img src="assets/images/hero-woman.jpg" alt="Hydra Radiance Glow" loading="lazy">
+                            <img src="assets/treatment/acne_scars_treatment_hero_banner.png" alt="Acne Scars Treatment"
+                                loading="lazy">
                         </div>
                         <div class="treatment-card-info">
-                            <span class="treatment-card-info-title">Hydra Radiance Glow Protocol</span>
-                            <div class="treatment-card-arrow">→</div>
+                            <span class="treatment-card-info-title">Acne Scars Treatment</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
                         </div>
-                    </article>
+                    </a>
+
+                    <!-- 3. Pigmentation / Melasma -->
+                    <a href="services/pigmentation-treatment.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/pigmentation_treatment_banner.png" alt="Pigmentation / Melasma"
+                                loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Pigmentation / Melasma</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 4. Anti-Aging & Wrinkle -->
+                    <a href="services/anti-aging-treatment.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/anti-aging_banner.png" alt="Anti-Aging & Wrinkle" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Anti-Aging &amp; Wrinkle</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 5. Chemical Peels -->
+                    <a href="services/chemical-peels.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/chemical_peels_hero_banner.png" alt="Chemical Peels"
+                                loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Chemical Peels</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 6. Laser Toning -->
+                    <a href="services/laser-toning.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/laser_toning_banner.png" alt="Laser Toning" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Laser Toning</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 7. Medi-Facial -->
+                    <a href="services/medi-facial.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/Medi-Facial_banner.png" alt="Medi-Facial" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Medi-Facial</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 8. Skin Brightening -->
+                    <a href="services/skin-brightening.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/skin_brightening_hero_banner.png" alt="Skin Brightening"
+                                loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Skin Brightening</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 9. Psoriasis Treatment -->
+                    <a href="services/psoriasis-treatment.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/psoriasis_treatment_banner.png" alt="Psoriasis Treatment"
+                                loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Psoriasis Treatment</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 10. Fungal Skin Infection -->
+                    <a href="services/fungal-skin-infection.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/fungal_skin_infection_hero_banner.png"
+                                alt="Fungal Skin Infection" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Fungal Skin Infection</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 11. Skin Allergy -->
+                    <a href="services/skin-allergy.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/skin_allergy_banner.png" alt="Skin Allergy" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Skin Allergy</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 12. Dark Circles -->
+                    <a href="services/dark-circles.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/dark_circles_banner.png" alt="Dark Circles" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Dark Circles</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 13. Warts / Moles -->
+                    <a href="services/warts-moles.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/warts_moles_hero_banner.png" alt="Warts / Moles" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Warts / Moles</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 14. Vitiligo -->
+                    <a href="services/vitiligo-treatment.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/vitiligo_treatment_banner.png" alt="Vitiligo" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Vitiligo</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 15. Tattoo Removal -->
+                    <a href="services/tattoo-removal.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/tatoo_removal_banner.png" alt="Tattoo Removal" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Tattoo Removal</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 16. Laser Hair Removal -->
+                    <a href="services/laser-hair-removal.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/laser_hair_removal_hero_banner.png" alt="Laser Hair Removal"
+                                loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Laser Hair Removal</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 17. Botox / Fillers / Boosters -->
+                    <a href="services/botox-fillers.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/botox_fillers_banner.png" alt="Botox / Fillers / Boosters"
+                                loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Botox / Fillers / Boosters</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 18. Glutathione & Antioxidants -->
+                    <a href="services/glutathione-antioxidants.html" class="treatment-showcase-card reveal-up">
+                        <div class="treatment-card-thumbnail">
+                            <img src="assets/treatment/glutathione-antioxidants_banner.png"
+                                alt="Glutathione & Antioxidants" loading="lazy">
+                        </div>
+                        <div class="treatment-card-info">
+                            <span class="treatment-card-info-title">Glutathione &amp; Antioxidants</span>
+                            <div class="treatment-card-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </section>
@@ -296,22 +631,36 @@
 
                     <!-- Col 1: Brand -->
                     <div class="footer-brand-col">
-                        <img src="assets/images/dermiiz_logo_white.png" alt="DERMIIZ Skin and Hair Clinic" class="footer-logo-img">
+                        <img src="assets/images/dermiiz_logo_white.png" alt="DERMIIZ Skin and Hair Clinic"
+                            class="footer-logo-img">
                         <p class="footer-brand-text">
-                            We provide advanced, targeted therapies designed to effectively treat complex skin and hair
+                            We provide advanced, targeted therapies designed to effectively treat complex skin, hair,
+                            and nail conditions with clinical excellence.
                         </p>
                         <div class="footer-social-icons">
                             <a href="#" class="social-circle-btn" aria-label="Instagram">
-                                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
                             </a>
                             <a href="#" class="social-circle-btn" aria-label="Facebook">
-                                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
                             </a>
                             <a href="#" class="social-circle-btn" aria-label="YouTube">
-                                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
                             </a>
                             <a href="#" class="social-circle-btn" aria-label="X">
-                                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -322,7 +671,7 @@
                         <ul class="footer-menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="about.html">Doctors</a></li>
                             <li><a href="services.html">Blog</a></li>
                         </ul>
@@ -345,11 +694,19 @@
                             C83, 10th Cross St, West Thillai Nagar,<br>
                             Tiruchirappalli, Tamil Nadu 620018
                         </p>
+                        <p class="footer-address-text" style="margin-top: 0.65rem;">
+                            <strong>Call:</strong> +91 99621 69902<br>
+                            <strong>Hours:</strong> Mon – Sat: 10:00 AM – 8:30 PM<br>
+                            Sunday: 10:00 AM – 2:00 PM
+                        </p>
 
-                        <h4 class="footer-title" style="margin-top: 1.85rem;">News Letter</h4>
+                        <h4 class="footer-title" style="margin-top: 1.5rem;">Newsletter</h4>
                         <div class="footer-newsletter-pill">
                             <span class="newsletter-mail-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
                             </span>
                             <input type="email" placeholder="Enter Email Address*" aria-label="Email subscription">
                             <button type="button" class="newsletter-submit-btn">Subscribe Now</button>
@@ -369,7 +726,8 @@
 
             <!-- Attribution -->
             <div class="footer-attribution">
-                Designed and Developed By <a href="https://riverbird.in/" target="_blank">RiverBird Digital Solutions</a>
+                Designed and Developed By <a href="https://riverbird.in/" target="_blank">RiverBird Digital
+                    Solutions</a>
             </div>
 
         </div>
@@ -379,4 +737,5 @@
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
