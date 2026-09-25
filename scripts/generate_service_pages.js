@@ -2499,15 +2499,15 @@ function buildServicePageHTML(service) {
             <!-- Bottom Sub-Footer Strip -->
             <div class="footer-bottom-strip">
                 <div class="footer-bottom-item">©2026 All Rights Reserved</div>
-                <div class="footer-bottom-item"><a href="#">Terms and Conditions</a></div>
-                <div class="footer-bottom-item"><a href="#">Refund Policy</a></div>
-                <div class="footer-bottom-item"><a href="#">Privacy Policy</a></div>
+                <div class="footer-bottom-item"><a href="../terms.html">Terms and Conditions</a></div>
+                <div class="footer-bottom-item"><a href="../privacy-policy.html">Privacy Policy</a></div>
                 <div class="footer-bottom-item"><a href="#">Sitemap</a></div>
             </div>
 
             <!-- Attribution -->
             <div class="footer-attribution">
-                Designed and Developed By RiverBird Digital Solutions
+                Designed and Developed By <a href="https://riverbird.in/" target="_blank">RiverBird Digital
+                    Solutions</a>
             </div>
 
         </div>
