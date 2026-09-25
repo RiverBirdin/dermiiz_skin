@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,8 +32,7 @@
 
     <!-- Floating Navbar -->
     <header class="navbar-wrapper" id="navbar">
-        <div class="container">
-            <div class="navbar-container">
+        <div class="navbar-container">
                 <a href="index.html" class="navbar-logo" aria-label="Dermiiz Home">
                     <img src="assets/images/dermiiz_logo_black.png" alt="DERMIIZ Skin and Hair Clinic">
                 </a>
@@ -53,12 +52,10 @@
                         <div class="dropdown-menu dropdown-menu-skin" aria-labelledby="navSkinBtn">
                             <div class="dropdown-inner">
                                 <div class="dropdown-header">
-                                    <div class="dropdown-header-left">
-                                        <span class="dropdown-pill-badge">Clinical Dermatology</span>
-                                        <span class="dropdown-count-badge">18 Specialized Treatments</span>
+                                        <div class="dropdown-header-left">
+                                            <span class="dropdown-count-badge">18 Specialized Treatments</span>
+                                        </div>
                                     </div>
-                                    <a href="skin.html" class="dropdown-view-all">View All Skin Care →</a>
-                                </div>
                                 <div class="dropdown-grid dropdown-grid-skin">
                                     <a href="services/acne-treatment.html" class="dropdown-item"><span class="item-dot"></span>Acne Treatment</a>
                                     <a href="services/acne-scars-treatment.html" class="dropdown-item"><span class="item-dot"></span>Acne Scars Treatment</a>
@@ -94,12 +91,10 @@
                         <div class="dropdown-menu dropdown-menu-hair" aria-labelledby="navHairBtn">
                             <div class="dropdown-inner">
                                 <div class="dropdown-header">
-                                    <div class="dropdown-header-left">
-                                        <span class="dropdown-pill-badge">Trichology &amp; Restoration</span>
-                                        <span class="dropdown-count-badge">10 Advanced Therapies</span>
+                                        <div class="dropdown-header-left">
+                                            <span class="dropdown-count-badge">10 Advanced Therapies</span>
+                                        </div>
                                     </div>
-                                    <a href="hair.html" class="dropdown-view-all">View All Hair Care →</a>
-                                </div>
                                 <div class="dropdown-grid dropdown-grid-hair">
                                     <a href="services/hair-fall-treatment.html" class="dropdown-item"><span class="item-dot"></span>Hair Fall Treatment</a>
                                     <a href="services/prp-hair-treatment.html" class="dropdown-item"><span class="item-dot"></span>PRP Hair Treatment</a>
@@ -118,7 +113,7 @@
 
                     <!-- NAIL DROPDOWN MENU (ACTIVE) -->
                     <div class="nav-item-dropdown" data-dropdown="nail">
-                        <a href="nail.html" class="nav-link-item active has-dropdown" id="navNailBtn" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" class="nav-link-item has-dropdown active" id="navNailBtn" aria-haspopup="true" aria-expanded="false">
                             Nail
                             <svg class="dropdown-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor">
                                 <path d="M1 1l4 4 4-4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -127,12 +122,10 @@
                         <div class="dropdown-menu dropdown-menu-nail" aria-labelledby="navNailBtn">
                             <div class="dropdown-inner">
                                 <div class="dropdown-header">
-                                    <div class="dropdown-header-left">
-                                        <span class="dropdown-pill-badge">Podiatry &amp; Aesthetics</span>
-                                        <span class="dropdown-count-badge">3 Specialized Services</span>
+                                        <div class="dropdown-header-left">
+                                            <span class="dropdown-count-badge">3 Specialized Services</span>
+                                        </div>
                                     </div>
-                                    <a href="nail.html" class="dropdown-view-all">View All Nail Care →</a>
-                                </div>
                                 <div class="dropdown-grid dropdown-grid-nail">
                                     <a href="services/nail-fungus-treatment.html" class="dropdown-item"><span class="item-dot"></span>Nail Fungus Treatment</a>
                                     <a href="services/ingrown-nail-treatment.html" class="dropdown-item"><span class="item-dot"></span>Ingrown Nail Treatment</a>
@@ -142,15 +135,14 @@
                         </div>
                     </div>
 
-                    <a href="services.html" class="nav-link-item">Blog</a>
+                    <a href="gallery.html" class="nav-link-item">Gallery</a>
+                        <a href="services.html" class="nav-link-item">Blog</a>
                     <a href="contact.html" class="nav-link-item">Contact Us</a>
                 </nav>
 
-                <a href="contact.html" class="btn btn-dark btn-sm">
-                    Book Appointment
-                    <span class="btn-arrow" aria-hidden="true">
-                        <svg viewBox="0 0 16 16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8h10M9 4l4 4-4 4"/></svg>
-                    </span>
+                <!-- Action Button -->
+                <a href="contact.html" class="btn btn-dark">
+                    Book An Appointment
                 </a>
 
                 <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
@@ -159,7 +151,6 @@
                     <span></span>
                 </button>
             </div>
-        </div>
     </header>
 
     <!-- Mobile Nav Panel with Accordions -->
@@ -235,6 +226,7 @@
                 </div>
             </div>
 
+            <a href="gallery.html" class="mobile-nav-link">Gallery <span>→</span></a>
             <a href="services.html" class="mobile-nav-link">Blog <span>→</span></a>
             <a href="contact.html" class="mobile-nav-link">Contact Us <span>→</span></a>
         </nav>
@@ -242,7 +234,8 @@
     </div>
 
     <main>
-        <section class="inner-page-hero">
+        <section class="inner-page-hero"
+            style="background-image: linear-gradient(rgba(28, 20, 18, 0.88), rgba(28, 20, 18, 0.78)), url('assets/treatment/nail_hero_banner.png'); background-size: cover; background-position: center;">
             <div class="container">
                 <div class="section-tag light" style="justify-content: center;">Clinical Podiatry &amp; Onychology</div>
                 <h1 class="inner-page-hero-title">Medical Nail Health &amp; Aesthetic Care.</h1>
@@ -369,15 +362,14 @@
             <!-- Bottom Sub-Footer Strip -->
             <div class="footer-bottom-strip">
                 <div class="footer-bottom-item">©2026 All Rights Reserved</div>
-                <div class="footer-bottom-item"><a href="#">Terms and Conditions</a></div>
-                <div class="footer-bottom-item"><a href="#">Refund Policy</a></div>
-                <div class="footer-bottom-item"><a href="#">Privacy Policy</a></div>
+                <div class="footer-bottom-item"><a href="terms.html">Terms and Conditions</a></div>
+                <div class="footer-bottom-item"><a href="privacy-policy.html">Privacy Policy</a></div>
                 <div class="footer-bottom-item"><a href="#">Sitemap</a></div>
             </div>
 
             <!-- Attribution -->
             <div class="footer-attribution">
-                Designed and Developed By RiverBird Digital Solutions
+                Designed and Developed By <a href="https://riverbird.in/" target="_blank">RiverBird Digital Solutions</a>
             </div>
 
         </div>

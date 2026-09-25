@@ -44,12 +44,12 @@ body.doctor-profile-page {
 /* Doctor-specific hero backgrounds */
 .hero-amirtha {
     background-image: linear-gradient(to right, rgba(28, 20, 18, 0.94) 0%, rgba(28, 20, 18, 0.5) 28%, rgba(28, 20, 18, 0.18) 68%),
-        url('../assets/images/doctor_page_hero_banner_1.png');
+        url('../assets/doctors/doctor_page_hero_banner_1.png');
 }
 
 .hero-gunasekar {
     background-image: linear-gradient(to right, rgba(28, 20, 18, 0.94) 0%, rgba(28, 20, 18, 0.65) 28%, rgba(28, 20, 18, 0.22) 68%),
-        url('../assets/images/doctor_page_hero_banner_2.png');
+        url('../assets/doctors/doctor_page_hero_banner_2.png');
 }
 
 .hero-priya {
@@ -555,6 +555,11 @@ a.dp-info-val:hover {
 
 .dp-form-card {
     background-color: #302522;
+    background-color: #2D2320;
+    background-image: url('../assets/images/white_pattern_overlay.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 24px;
     padding: 3.5rem 4rem;
     color: #FFFFFF;

@@ -258,6 +258,8 @@ ol {
     white-space: nowrap;
     position: relative;
     line-height: 1;
+    text-decoration: none;
+    outline: none;
 }
 
 .btn-arrow {
@@ -1916,6 +1918,10 @@ ol {
     color: var(--color-white);
 }
 
+.banner-submit-btn {
+    width: fit-content;
+}
+
 .appointment-doctor-side {
     position: relative;
     display: flex;
@@ -2286,8 +2292,6 @@ ol {
     flex-shrink: 0;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(48, 37, 34, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2295,13 +2299,10 @@ ol {
     font-weight: 300;
     line-height: 1;
     color: var(--color-brown);
-    transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
     user-select: none;
 }
 
 .faq-accordion-item.active .faq-accordion-icon {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.4);
     color: #ffffff;
 }
 
@@ -2623,6 +2624,8 @@ ol {
 .about-doctors-desc {
     font-size: 0.95rem;
     line-height: 1.65;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
     color: #786B65;
 }
 
@@ -2705,6 +2708,278 @@ ol {
     color: #2D2320;
     box-shadow: 0 6px 20px rgba(45, 35, 32, 0.05);
     border: 1px solid rgba(45, 35, 32, 0.06);
+}
+
+/* 2b. Section 2b: Why Our Doctors Stand Apart — Dark Premium */
+.about-whydoctors-section {
+    padding: 7rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-whydoctors-section::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(248, 227, 203, 0.04) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.whydoc-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* --- LEFT COLUMN --- */
+.whydoc-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.whydoc-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #302522;
+    margin-bottom: 1.35rem;
+    text-transform: uppercase;
+}
+
+
+.whydoc-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    color: #302522;
+    margin-bottom: 1.4rem;
+}
+
+.whydoc-subtext {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #7D7D75;
+    margin-bottom: 2.5rem;
+    max-width: 440px;
+}
+
+/* Stats Grid */
+.whydoc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(248, 227, 203, 0.12);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.whydoc-stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.5rem 1.75rem;
+    border-right: 1px solid rgba(248, 227, 203, 0.12);
+    border-bottom: 1px solid rgba(248, 227, 203, 0.12);
+}
+
+.whydoc-stat-item:nth-child(2n) {
+    border-right: none;
+}
+
+.whydoc-stat-item:nth-child(3),
+.whydoc-stat-item:nth-child(4) {
+    border-bottom: none;
+}
+
+.whydoc-stat-num {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #302522;
+    letter-spacing: -0.04em;
+}
+
+.whydoc-stat-plus {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #302522;
+}
+
+.whydoc-stat-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #302522;
+    line-height: 1.45;
+}
+
+/* Credential Tags */
+.whydoc-credential-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2.25rem;
+}
+
+.whydoc-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(248, 227, 203, 0.16);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #302522;
+    letter-spacing: 0.02em;
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.whydoc-tag svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+
+
+/* Outline CTA button for dark bg */
+.btn-light-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.85rem 1.8rem;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+    width: fit-content;
+}
+
+
+/* --- RIGHT COLUMN: Doctor Cards --- */
+.whydoc-right {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.whydoc-portrait-card {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.whydoc-portrait-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+}
+
+
+.whydoc-portrait-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+
+    background-color: #2D2320;
+    background-image: url('../assets/images/white_pattern_overlay.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.whydoc-portrait-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.whydoc-portrait-card:hover .whydoc-portrait-img-wrap img {
+    transform: scale(1.06);
+}
+
+.whydoc-portrait-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            transparent 40%,
+            rgba(18, 10, 8, 0.75) 100%);
+    pointer-events: none;
+}
+
+/* Name Badge overlaid at bottom of card */
+.whydoc-portrait-badge {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.85rem;
+    right: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #ffffff;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 0.65rem 0.85rem;
+    transition: background 0.25s ease;
+}
+
+.whydoc-badge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.whydoc-badge-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #302522;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.whydoc-badge-role {
+    font-size: 0.72rem;
+    color: #7D7D75;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.whydoc-badge-arrow {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    stroke: #302522;
+    transition: stroke 0.2s ease, transform 0.2s ease;
+}
+
+.whydoc-portrait-card:hover .whydoc-badge-arrow {
+    stroke: #302522;
+    transform: translate(2px, -2px);
 }
 
 /* 3. Section 3: Tailored Treatments */
@@ -3780,4 +4055,498 @@ ol {
     max-height: 220px;
     padding-bottom: 1.5rem;
     color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* ============================================================
+   SECTION 11: DOCTORS QUOTE SCROLL STACK (Vertical)
+   ============================================================ */
+
+.doctors-quote-section {
+    padding: 6rem 0 4rem;
+    background: var(--dermiiz-ivory);
+    overflow: hidden;
+}
+
+.doctors-quote-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+/* Stack container */
+.dqs-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* Each panel — full-width wide banner card */
+.dqs-panel {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #FAF7F2;
+    box-shadow: 0 14px 45px rgba(48, 37, 34, 0.08);
+    border: 1px solid rgba(48, 37, 34, 0.09);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.4s ease;
+}
+
+.dqs-panel.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dqs-panel:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.dqs-panel:hover {
+    box-shadow: 0 22px 55px rgba(48, 37, 34, 0.13);
+}
+
+/* Banner image background */
+.dqs-panel-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.dqs-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.dqs-panel:hover .dqs-bg-img {
+    transform: scale(1.025);
+}
+
+/* Gradient overlay: keeps doctor clear on left and provides clean backdrop on right */
+.dqs-panel-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(250, 247, 242, 0) 0%,
+            rgba(250, 247, 242, 0) 35%,
+            rgba(250, 247, 242, 0.55) 48%,
+            rgba(250, 247, 242, 0.92) 64%,
+            rgba(250, 247, 242, 0.98) 100%);
+    pointer-events: none;
+}
+
+/* Inner layout container */
+.dqs-panel-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 520px;
+    padding: 3rem 4rem;
+}
+
+/* Right text column */
+.dqs-text-col {
+    width: 52%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.85rem;
+    position: relative;
+}
+
+/* Quote symbol badge */
+.dqs-quote-symbol {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #302522;
+    color: #FAF7F2;
+    box-shadow: 0 6px 18px rgba(48, 37, 34, 0.16);
+    margin-bottom: 0.25rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.dqs-quote-symbol svg {
+    width: 22px;
+    height: 22px;
+}
+
+.dqs-panel:hover .dqs-quote-symbol {
+    transform: scale(1.06) rotate(-3deg);
+    background: #1E1A18;
+}
+
+/* Eyebrow badge */
+.dqs-eyebrow {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8C533E;
+}
+
+/* Doctor Name */
+.dqs-name {
+    font-size: clamp(2rem, 2.8vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #1E1A18;
+    margin: 0;
+    line-height: 1.15;
+}
+
+/* Qualifications */
+.dqs-role {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #786B65;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Doctor Quote */
+.dqs-quote {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #302522;
+    font-style: italic;
+    margin: 0.4rem 0 0.6rem;
+    padding: 0;
+    border: none;
+}
+
+/* Tags */
+.dqs-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.dqs-tag {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(48, 37, 34, 0.06);
+    color: #302522;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(48, 37, 34, 0.1);
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.dqs-tag:hover {
+    background: rgba(48, 37, 34, 0.1);
+    border-color: rgba(48, 37, 34, 0.2);
+}
+
+/* Action button / link */
+.dqs-action {
+    margin-top: 0.5rem;
+}
+
+.dqs-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #302522;
+    text-decoration: none;
+    transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.dqs-link svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.25s ease;
+}
+
+.dqs-link:hover {
+    color: #8C533E;
+    gap: 0.75rem;
+}
+
+.dqs-link:hover svg {
+    transform: translateX(3px);
+}
+
+.doctors-quote-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .dqs-panel-inner {
+        padding: 2.5rem 3rem;
+        min-height: 480px;
+    }
+
+    .dqs-text-col {
+        width: 58%;
+        max-width: 520px;
+    }
+
+    .dqs-panel-bg::after {
+        background: linear-gradient(90deg,
+                rgba(250, 247, 242, 0) 0%,
+                rgba(250, 247, 242, 0) 24%,
+                rgba(250, 247, 242, 0.65) 42%,
+                rgba(250, 247, 242, 0.94) 58%,
+                rgba(250, 247, 242, 0.98) 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .dqs-panel {
+        display: flex;
+        flex-direction: column;
+        min-height: unset;
+    }
+
+    .dqs-panel-bg {
+        position: relative;
+        height: 320px;
+        width: 100%;
+        inset: auto;
+    }
+
+    .dqs-bg-img {
+        object-position: 25% center;
+    }
+
+    .dqs-panel-bg::after {
+        background: linear-gradient(to bottom,
+                rgba(250, 247, 242, 0) 50%,
+                rgba(250, 247, 242, 0.8) 85%,
+                rgba(250, 247, 242, 1) 100%);
+    }
+
+    .dqs-panel-inner {
+        min-height: unset;
+        padding: 0;
+        display: block;
+        background: #FAF7F2;
+    }
+
+    .dqs-text-col {
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 1.75rem 2.25rem;
+    }
+
+    .dqs-name {
+        font-size: 1.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dqs-panel-bg {
+        height: 250px;
+    }
+
+    .dqs-text-col {
+        padding: 1.5rem 1.25rem 1.75rem;
+    }
+
+    .dqs-name {
+        font-size: 1.65rem;
+    }
+
+    .dqs-quote {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ============================================================
+   SECTION 12: CLINIC BUILDING CTA BANNER (Two-Column)
+   ============================================================ */
+
+.clinic-cta-section {
+    padding: 4rem 0;
+    background: var(--dermiiz-ivory);
+}
+
+/* Two-column card */
+.clinic-cta-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    border-radius: 28px;
+    border: 1.5px solid rgba(48, 37, 34, 0.08);
+    box-shadow: 0 8px 40px rgba(48, 37, 34, 0.08);
+    overflow: hidden;
+    min-height: 200px;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+/* Left text column */
+.clinic-cta-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 150%;
+    justify-content: left;
+}
+
+.clinic-cta-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--dermiiz-brown);
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+
+.clinic-cta-actions {
+    display: flex;
+    align-items: left;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+/* Right image column */
+.clinic-cta-image-col {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: stretch;
+    padding-right: 0;
+}
+
+.clinic-building-img {
+    height: 320px;
+    width: auto;
+    object-fit: contain;
+    object-position: bottom right;
+    display: block;
+    filter: drop-shadow(0 12px 32px rgba(48, 37, 34, 0.12));
+    transform: translateY(66px);
+}
+
+/* Buttons (reused) */
+.btn-clinic-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2.1rem;
+    border-radius: 999px;
+    background: #302522;
+    color: #FFFFFF;
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 6px 20px rgba(48, 37, 34, 0.18);
+    white-space: nowrap;
+}
+
+.btn-clinic-primary:hover {
+    background: #1E1A18;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(48, 37, 34, 0.26);
+}
+
+.btn-clinic-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    border-radius: 999px;
+    background: transparent;
+    color: #302522;
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1.5px solid rgba(48, 37, 34, 0.25);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    white-space: nowrap;
+}
+
+.btn-clinic-ghost:hover {
+    border-color: #302522;
+    background: rgba(48, 37, 34, 0.06);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .clinic-cta-card {
+        padding: 3rem 3rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .clinic-cta-image-col {
+        align-self: flex-end;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .clinic-building-img {
+        height: 240px;
+    }
+
+    .clinic-cta-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .clinic-cta-card {
+        padding: 2.5rem 1.75rem 0;
+    }
+
+    .clinic-cta-heading {
+        font-size: 1.65rem;
+    }
+
+    .clinic-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-clinic-primary,
+    .btn-clinic-ghost {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .clinic-building-img {
+        height: 200px;
+    }
 }

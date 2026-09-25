@@ -1985,14 +1985,12 @@ function getRelatedServices(currentSlug, category) {
 function buildServicePageHTML(service) {
     const related = getRelatedServices(service.slug, service.category);
 
-    // Hero background image assignment: Acne Treatment uses hero_bannaer_acne_treatment.png specifically
-    const heroBannerImg = service.slug === 'acne-treatment'
-        ? '../assets/images/hero_bannaer_acne_treatment.png'
-        : (service.category === 'Hair'
-            ? '../assets/images/Hair_care_service.png'
-            : (service.category === 'Nail'
-                ? '../assets/images/complete_care_nail_treat.jpg'
-                : '../assets/images/about_hero_banner.png'));
+    // Hero background image assignment by category
+    const heroBannerImg = service.category === 'Hair'
+        ? '../assets/treatment/hair_hero_banner.png'
+        : (service.category === 'Nail'
+            ? '../assets/treatment/nail_hero_banner.png'
+            : '../assets/treatment/skin_hero_banner.png');
 
     return `<!DOCTYPE html>
 <html lang="en">

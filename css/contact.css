@@ -579,7 +579,7 @@ body.contact-page {
     height: 100%;
     border: none;
     display: block;
-    filter: grayscale(76%) sepia(48%) hue-rotate(-22deg) contrast(114%) brightness(96%);
+
     transition: filter 0.3s ease;
 }
 
